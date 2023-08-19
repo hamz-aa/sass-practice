@@ -12,8 +12,7 @@
     @include btn;
 }
 
-@each $key,
-$val in $colors {
+@each $key, $val in $colors {
     .btn-#{$key} {
         @include btn($val);
         &:hover{
